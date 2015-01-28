@@ -1,0 +1,300 @@
+/*
+ * Draughts - Free Version
+ * 
+ * Version: 1.0.0
+ * 
+ * Copyright 2015 Galaa (www.galaa.mn). All Rights Reserved.
+ * 
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ * MA 02110-1301, USA.
+ * 
+ */
+
+/* * * * * * * * * * * * * * * * * * *
+ *
+ *   Table
+ *
+ * * * * * * * * * * * * * * * * * * */
+.draugths{
+	width:350px !important;
+	height:350px !important;
+	border:0px !important;
+}
+/* * * * * * * * * * * * * * * * * * *
+ *
+ *   Board
+ *
+ * * * * * * * * * * * * * * * * * * */
+.draugths .board{
+	position:relative;
+}
+.draugths .square{
+	width:35px;
+	height:35px;
+	float:left;
+}
+.draugths .light{
+	background-color:#e3c58c;
+}
+.draugths .dark{
+	background-color:#955f22;
+}
+.draugths .dark p{
+	margin-top:3px;
+	margin-left:3px;
+	color:#e3c58c;
+	font-size:8px;
+}
+/* * * * * * * * * * * * * * * * * * *
+ *
+ *   Pieces
+ *
+ * * * * * * * * * * * * * * * * * * */
+.draugths .board .piece{
+	position:absolute;
+	width:25px;
+	height:25px;
+	border-radius:50%;
+}
+.draugths .board .piece-black{
+	background-color:#333;
+}
+.draugths .board .piece-white{
+	background-color:#eee;
+}
+.draugths .board .piece .crown{
+	position:absolute;
+	top:5px;
+	left:5px;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+}
+.draugths .board .piece-black .crown{
+	border:3px solid #777;
+}
+.draugths .board .piece-white .crown{
+	border:3px solid #aaa;
+}
+/* * * * * * * * * * * * * * * * * * *
+ *
+ *   Piece Positions
+ *
+ * * * * * * * * * * * * * * * * * * */
+/* 1 - 10 */
+.draugths .board .piece-1{
+	top:5px;
+	left:40px;
+}
+.draugths .board .piece-2{
+	top:5px;
+	left:110px;
+}
+.draugths .board .piece-3{
+	top:5px;
+	left:180px;
+}
+.draugths .board .piece-4{
+	top:5px;
+	left:250px;
+}
+.draugths .board .piece-5{
+	top:5px;
+	left:320px;
+}
+.draugths .board .piece-6{
+	top:40px;
+	left:5px;
+}
+.draugths .board .piece-7{
+	top:40px;
+	left:75px;
+}
+.draugths .board .piece-8{
+	top:40px;
+	left:145px;
+}
+.draugths .board .piece-9{
+	top:40px;
+	left:215px;
+}
+.draugths .board .piece-10{
+	top:40px;
+	left:285px;
+}
+/* 11 - 20 */
+.draugths .board .piece-11{
+	top:75px;
+	left:40px;
+}
+.draugths .board .piece-12{
+	top:75px;
+	left:110px;
+}
+.draugths .board .piece-13{
+	top:75px;
+	left:180px;
+}
+.draugths .board .piece-14{
+	top:75px;
+	left:250px;
+}
+.draugths .board .piece-15{
+	top:75px;
+	left:320px;
+}
+.draugths .board .piece-16{
+	top:110px;
+	left:5px;
+}
+.draugths .board .piece-17{
+	top:110px;
+	left:75px;
+}
+.draugths .board .piece-18{
+	top:110px;
+	left:145px;
+}
+.draugths .board .piece-19{
+	top:110px;
+	left:215px;
+}
+.draugths .board .piece-20{
+	top:110px;
+	left:285px;
+}
+/* 21 - 30 */
+.draugths .board .piece-21{
+	top:145px;
+	left:40px;
+}
+.draugths .board .piece-22{
+	top:145px;
+	left:110px;
+}
+.draugths .board .piece-23{
+	top:145px;
+	left:180px;
+}
+.draugths .board .piece-24{
+	top:145px;
+	left:250px;
+}
+.draugths .board .piece-25{
+	top:145px;
+	left:320px;
+}
+.draugths .board .piece-26{
+	top:180px;
+	left:5px;
+}
+.draugths .board .piece-27{
+	top:180px;
+	left:75px;
+}
+.draugths .board .piece-28{
+	top:180px;
+	left:145px;
+}
+.draugths .board .piece-29{
+	top:180px;
+	left:215px;
+}
+.draugths .board .piece-30{
+	top:180px;
+	left:285px;
+}
+/* 31 - 40 */
+.draugths .board .piece-31{
+	top:215px;
+	left:40px;
+}
+.draugths .board .piece-32{
+	top:215px;
+	left:110px;
+}
+.draugths .board .piece-33{
+	top:215px;
+	left:180px;
+}
+.draugths .board .piece-34{
+	top:215px;
+	left:250px;
+}
+.draugths .board .piece-35{
+	top:215px;
+	left:320px;
+}
+.draugths .board .piece-36{
+	top:250px;
+	left:5px;
+}
+.draugths .board .piece-37{
+	top:250px;
+	left:75px;
+}
+.draugths .board .piece-38{
+	top:250px;
+	left:145px;
+}
+.draugths .board .piece-39{
+	top:250px;
+	left:215px;
+}
+.draugths .board .piece-40{
+	top:250px;
+	left:285px;
+}
+/* 41 - 50 */
+.draugths .board .piece-41{
+	top:285px;
+	left:40px;
+}
+.draugths .board .piece-42{
+	top:285px;
+	left:110px;
+}
+.draugths .board .piece-43{
+	top:285px;
+	left:180px;
+}
+.draugths .board .piece-44{
+	top:285px;
+	left:250px;
+}
+.draugths .board .piece-45{
+	top:285px;
+	left:320px;
+}
+.draugths .board .piece-46{
+	top:320px;
+	left:5px;
+}
+.draugths .board .piece-47{
+	top:320px;
+	left:75px;
+}
+.draugths .board .piece-48{
+	top:320px;
+	left:145px;
+}
+.draugths .board .piece-49{
+	top:320px;
+	left:215px;
+}
+.draugths .board .piece-50{
+	top:320px;
+	left:285px;
+}
