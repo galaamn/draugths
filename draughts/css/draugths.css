@@ -1,0 +1,109 @@
+/*
+ * Draughts
+ * 
+ * Version: 1.0.0
+ * 
+ * Copyright 2015 Galaa (www.galaa.mn). All Rights Reserved.
+ * 
+ * License - http://www.gnu.org/copyleft/gpl.html
+ * 
+ */
+
+/* * * * * * * * * * * * * * * * * * *
+ *
+ *   Table
+ *
+ * * * * * * * * * * * * * * * * * * */
+.draugths{
+	width:350px !important;
+	height:350px !important;
+	border:0px !important;
+	margin-left:auto;
+	margin-right:auto;
+}
+/* * * * * * * * * * * * * * * * * * *
+ *
+ *   Controls
+ *
+ * * * * * * * * * * * * * * * * * * */
+.draugths .controls{
+	position:absolute;
+	padding:140px;
+}
+.draugths .controls .control{
+	height:70px;
+	width:70px;
+	cursor:pointer;
+	color:#955f22;
+	opacity:0.5;
+}
+.draugths .controls .hidden{
+	display:none;
+}
+.draugths .controls .control i{
+	font-size:50px;
+	line-height:70px;
+}
+.draugths .controls .control:hover{
+	background-color:#000;
+	color:#e3c58c;
+}
+/* * * * * * * * * * * * * * * * * * *
+ *
+ *   Board
+ *
+ * * * * * * * * * * * * * * * * * * */
+.draugths .board{
+	position:relative;
+}
+.draugths .square{
+	width:35px;
+	height:35px;
+	float:left;
+}
+.draugths .light{
+	background-color:#e3c58c;
+}
+.draugths .dark{
+	background-color:#955f22;
+}
+.draugths .dark p{
+	margin-top:3px;
+	margin-left:3px;
+	color:#e3c58c;
+	font-size:8px;
+}
+/* * * * * * * * * * * * * * * * * * *
+ *
+ *   Pieces
+ *
+ * * * * * * * * * * * * * * * * * * */
+.draugths .board .piece{
+	position:absolute;
+	width:25px;
+	height:25px;
+	border-radius:50%;
+}
+.draugths .board .piece-black{
+	background-color:#333;
+}
+.draugths .board .piece-white{
+	background-color:#eee;
+}
+.draugths .board .piece .crown{
+	position:absolute;
+	top:5px;
+	left:5px;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.draugths .board .piece-black .crown{
+	border:3px solid #777;
+}
+.draugths .board .piece-white .crown{
+	border:3px solid #aaa;
+}
